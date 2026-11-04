@@ -1,0 +1,1406 @@
+
+/* Color variables used throughout the website */
+:root {
+  --olive-stem: #5F7334;
+  --sunlit-daisy: #FBD878;
+  --soft-clay: #F2896A;
+  --hot-gossip: #CC004B;
+  --bare-minimum: #F4CFB9;
+  --bg-color: #faf8f5;
+  --text-color: #000000;
+}
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* Top part of the header */
+.header-top {
+  background-color: var(--olive-stem);
+  text-align: center;
+  padding: 5px 20px;
+}
+/* Logo and website name */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+/* Logo image size */
+.logo-container img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+/* Website name style */
+.logo-container span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--bare-minimum);
+}
+/* Navigation Bar */
+nav {
+  background-color: rgba(244, 207, 185, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(95, 115, 52, 0.2);
+}
+/* Navigation list layout */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 12px 20px;
+}
+/* Navigation links */
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--olive-stem);
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+/* Navigation link hover effect */
+nav ul li a:hover {
+  color: var(--hot-gossip);
+}
+/* Footer */
+footer {
+  background-color: var(--olive-stem);
+  color: white;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+/* Footer sections layout */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* Footer headings */
+.footer-section h2, .footer-section h3, .footer-section h4 {
+  color: var(--sunlit-daisy);
+  margin-bottom: 10px;
+}
+/* Footer lists */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+/* Footer links */
+.footer-section ul li a, .footer-section ul li a:visited {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+/* Footer link hover effect */
+.footer-section ul li a:hover, .footer-section ul li a:active {
+  color: var(--sunlit-daisy);
+  text-decoration: none;
+}
+/* Copyright section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  font-size: 0.85rem;
+}
+/* Footer icon size */
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+/* Footer logo alignment */
+#footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+/* Footer logo size */
+#footer-logo img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+.footer-section hr {
+  padding-bottom: 1px;
+  border: none;
+  border-top: 3px solid var(--sunlit-daisy);
+}
+/* Home page */
+.home-page {
+  max-width: 1100px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 28px auto 48px;
+  text-align: center;
+}
+.home-hero-logo {
+  width: min(55%, 390px);
+  height: 165px;
+  object-fit: contain;
+}
+.home-hero-copy {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--sunlit-daisy);
+}
+.home-hero-copy h1 {
+  margin: 0;
+  color: var(--olive-stem);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+}
+.home-hero-copy > p:not(.home-eyebrow) {
+  max-width: 560px;
+  margin: 12px auto 22px;
+}
+.home-eyebrow {
+  margin: 0 0 5px;
+  color: var(--hot-gossip);
+  font-size: .8rem;
+  font-weight: bold;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.home-button {
+  display: inline-block;
+  padding: 11px 24px;
+  border-radius: 7px;
+  background: var(--olive-stem);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+.home-button:hover {
+  background: var(--hot-gossip);
+}
+.home-section {
+  margin: 0 auto 48px;
+}
+.home-section-heading {
+  margin-bottom: 20px;
+}
+.home-section-heading h2, .symbolism-intro h2 {
+  margin: 0;
+  color: var(--olive-stem);
+  font-size: 1.8rem;
+}
+.home-section-heading > p:last-child {
+  margin: 5px 0 0;
+}
+.featured-offerings {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+.featured-card {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 14px;
+  background: var(--bare-minimum);
+  transition: transform .2s ease;
+}
+.home-offering-image {
+  display: block;
+  width: calc(100% - 28px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin: 14px 14px 0;
+  border-radius: 4px;
+  object-fit: contain;
+  object-position: center;
+  background: var(--bg-color);
+}
+.featured-card-copy {
+  padding: 18px;
+}
+.featured-card-copy h3 {
+  margin: 0 0 8px;
+  color: var(--olive-stem);
+  font-size: 1.15rem;
+}
+.featured-card-copy p {
+  display: none;
+  margin: 0 0 10px;
+  font-size: .94rem;
+}
+@media (hover: hover) {
+  .featured-card:hover {
+    transform: translateY(8px);
+    z-index: 1;
+  }
+  .featured-card:hover .featured-card-copy p {
+    display: block;
+  }
+}
+@media (hover: none) {
+  .featured-card-copy p {
+    display: block;
+  }
+}
+.calendar-section {
+  padding: 28px;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 16px;
+  background: var(--bg-color);
+}
+.calendar-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 14px;
+  border: 1px solid var(--bare-minimum);
+  background: #fff;
+}
+.calendar-wrap h3 {
+  margin: 0 0 10px;
+  color: var(--olive-stem);
+  font-size: 1.1rem;
+}
+.events-calendar {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.events-calendar th {
+  padding: 9px 3px;
+  background: var(--bare-minimum);
+  color: var(--text-color);
+  font-size: .78rem;
+}
+.events-calendar td {
+  height: 74px;
+  padding: 5px;
+  border: 1px solid var(--bare-minimum);
+  vertical-align: top;
+}
+.calendar-day {
+  display: block;
+  color: #000000;
+  font-size: .82rem;
+}
+.calendar-note {
+  display: block;
+  margin-top: 8px;
+  padding: 4px;
+  border-left: 3px solid var(--soft-clay);
+  background: var(--bare-minimum);
+  color: var(--text-color);
+  font-size: .68rem;
+  line-height: 1.25;
+}
+.calendar-outside {
+  color: #000000;
+  background: var(--bg-color);
+  font-size: .8rem;
+}
+.symbolism-section {
+  display: block;
+  padding: 26px;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 16px;
+  background: var(--bg-color);
+}
+.symbolism-intro {
+  margin-bottom: 20px;
+}
+.symbolism-intro > p:last-child {
+  max-width: 620px;
+  margin: 7px 0 0;
+}
+.symbolism-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.symbolism-item {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--bare-minimum);
+  border-top: 4px solid var(--soft-clay);
+  border-radius: 8px;
+  background: #fff;
+}
+.symbolism-item h3 {
+  margin: 0 0 5px;
+  color: var(--olive-stem);
+  font-size: 1.05rem;
+}
+.symbolism-item p {
+  margin: 0;
+  font-size: .92rem;
+}
+.review-list {
+  display: flex;
+  gap: 18px;
+}
+.review-card {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 12px;
+  background: var(--bg-color);
+}
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.review-top h3 {
+  margin: 0;
+  color: var(--olive-stem);
+  font-size: 1.05rem;
+}
+.review-rating {
+  color: var(--olive-stem);
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+.review-rating small {
+  color: #555;
+  letter-spacing: 0;
+}
+.review-card > p {
+  margin: 13px 0;
+}
+.reviewer {
+  color: #666;
+  font-size: .88rem;
+  font-style: italic;
+}
+@media (max-width: 760px) {
+  .home-hero {
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .home-hero-logo {
+    width: 75%;
+    height: 125px;
+  }
+  .home-hero-copy {
+    padding: 18px 14px;
+  }
+  .featured-offerings, .review-list {
+    flex-direction: column;
+  }
+  .symbolism-list {
+    grid-template-columns: 1fr;
+  }
+  .calendar-section {
+    padding: 20px 12px;
+  }
+  .calendar-wrap {
+    padding: 7px;
+    overflow-x: auto;
+  }
+  .events-calendar {
+    min-width: 560px;
+  }
+  .events-calendar td {
+    height: 65px;
+  }
+}
+/* About Us Section */
+#aboutUs {
+  max-width: 1000px;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  margin: 30px auto;
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  color: var(--olive-stem);
+}
+/* About Us content columns */
+#aboutUs > div {
+  flex: 1;
+  min-width: 0;
+}
+/* About Us heading */
+#aboutUs h1 {
+  font-size: 2em;
+  color: var(--olive-stem);
+}
+/* About Us paragraphs */
+#aboutUs p {
+  color: #000000;
+  min-width: 0;
+  font-size: 1rem;
+}
+/* Vertical Divider */
+#aboutUs .vr {
+  flex: 0 0 0;
+  align-self: stretch;
+  border: none;
+  border-left: 3px solid var(--bare-minimum);
+  margin: 0;
+}
+/* Activity Leaders */
+.leaders {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: var(--olive-stem);
+}
+/* Section headings */
+.leaders h2, .joinTitle {
+  font-size: 2em;
+  color: var(--olive-stem);
+  text-align: center;
+}
+/* Scrollable leaders cards */
+.leaders-Scroll {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 10px;
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .leaders-Scroll {
+    justify-content: flex-start;
+  }
+}
+/* Individual leader cards */
+.leaders-Scroll div {
+  flex: 0 0 160px;
+  text-align: center;
+  margin-right: 0;
+  border: 2px solid var(--bare-minimum);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+/* Leader images */
+.leaders-Scroll div img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+/* Leader profile links */
+.leaders-Scroll div a {
+  display: block;
+  margin-top: 8px;
+  padding: 12px;
+  font-weight: bold;
+  color: var(--olive-stem);
+  text-decoration: none;
+}
+/* Leader link hover effect */
+.leaders-Scroll div a:hover {
+  color: var(--hot-gossip);
+}
+/* Join Our Team Form */
+.Join_Form {
+  max-width: 650px;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  color: var(--olive-stem);
+  margin: 30px auto;
+  border: 2px solid var(--bare-minimum);
+  background-color: #ffffff;
+  border-radius: 9px;
+  padding: 20px 30px;
+}
+/* Join form title alignment */
+.joinTitle {
+  max-width: 650px;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  margin: 30px auto 20px;
+  padding: 0;
+  font-size: 2em;
+  color: var(--olive-stem);
+}
+/* Join form labels */
+.Join_Form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1em;
+}
+/* Join form input fields */
+.Join_Form input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  border: 1px solid var(--olive-stem);
+  border-radius: 6px;
+  background-color: var(--bg-color);
+  padding: 10px;
+}
+/* Join form submit button */
+.Join_Form button {
+  display: block;
+  width: 130px;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: var(--soft-clay);
+  color: #ffffff;
+  font-weight: bold;
+  border: 1px solid var(--olive-stem);
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* Join form button hover effect */
+.Join_Form button:hover {
+  background-color: var(--hot-gossip);
+}
+/* Instructor Profile */
+.profile {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Instructor profile heading */
+.profile h1 {
+  color: var(--olive-stem);
+  font-size: 2em;
+  text-align: center;
+}
+/* Instructor information table */
+.profileTable {
+  border-collapse: collapse;
+  max-width: 650px;
+  width: calc(100% - 20px);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0 auto;
+}
+/* Table cells */
+.profileTable th, .profileTable td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  font-size: 0.9em;
+  color: #000000;
+}
+/* Table heading column width */
+.profileTable th {
+  width: 35%;
+}
+/* Instructor name row */
+.profileTable .name-row td {
+  background-color: var(--bare-minimum);
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* Highlighted table rows */
+.pink-row th {
+  background-color: var(--bare-minimum);
+  text-align: left;
+  font-weight: bold;
+}
+/* Lists inside highlighted rows */
+.pink-row ul {
+  list-style: none;
+  padding: 1px;
+}
+/* Instructor profile photo */
+.profileTable .profilephoto {
+  width: 150px;
+  height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.profileTable td[rowspan] {
+  background-color: var(--bare-minimum);
+  text-align: center;
+}
+/* Breadcrumb - Unified Spacing */
+.breadcrumb {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  color: var(--olive-stem);
+}
+/* Breadcrumb links */
+.breadcrumb a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--olive-stem);
+}
+/* Breadcrumb hover effect */
+.breadcrumb a:hover {
+  color: var(--hot-gossip);
+}
+/* Divider Line */
+hr {
+  padding-bottom: 50px;
+  border: none;
+  border-bottom: 3px solid var(--bare-minimum);
+}
+/* Responsive Layout */
+@media (max-width: 600px) {
+  /* Stack About Us content vertically */
+  #aboutUs {
+    flex-direction: column;
+  }
+  /* Change the divider direction */
+  #aboutUs .vr {
+    border-left: none;
+    border-top: 3px solid var(--bare-minimum);
+  }
+  /* Reduce form padding on small screens */
+  .Join_Form {
+    padding: 20px;
+  }
+  /* Adjust table heading width */
+  .profileTable th {
+    width: 40%;
+  }
+}
+/* Member Dashboard Section */
+#memberDB {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Dashboard heading */
+#memberDB > h1 {
+  text-align: center;
+  color: var(--olive-stem);
+  margin-top: 20px;
+}
+/* Previous Participation Requests Table Box */
+#tablePrevReq {
+  background-color: #ffffff;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 25px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+/* Requests table heading */
+#tablePrevReq h2 {
+  color: var(--olive-stem);
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--soft-clay);
+  padding-bottom: 8px;
+  display: inline-block;
+}
+/* Requests table layout */
+#tablePrevReq table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--bare-minimum);
+}
+/* Table column headings */
+#tablePrevReq th {
+  background-color: var(--bare-minimum);
+  color: var(--text-color);
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+/* Table data cells */
+#tablePrevReq td {
+  padding: 12px 16px;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--bare-minimum);
+  transition: background-color 0.2s ease;
+}
+/* Match the manager dashboard's striped rows and warm hover highlight */
+#tablePrevReq tr:nth-child(odd) td {
+  background-color: var(--bg-color);
+}
+#tablePrevReq tr:hover td {
+  background-color: #fdf1e9;
+}
+/* Remove the bottom border from the last row */
+#tablePrevReq tr:last-child td {
+  border-bottom: none;
+}
+/* Dashboard Action Boxes */
+.DBAction {
+  display: flex;
+  gap: 20px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+/* Individual dashboard action boxes */
+.actionA {
+  flex: 1;
+  min-width: 280px;
+  background-color: #ffffff;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+}
+/* Action box headings */
+.actionA h2 {
+  color: var(--olive-stem);
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--soft-clay);
+  padding-bottom: 6px;
+  display: inline-block;
+}
+/* Action box descriptions */
+.actionA p {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+/* Action box buttons */
+.actionA .btn {
+  display: inline-block;
+  background-color: var(--soft-clay);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(242, 137, 106, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+/* Action button hover effect */
+.actionA .btn:hover {
+  background-color: var(--hot-gossip);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(204, 0, 75, 0.3);
+}
+/* Member Forms: Request and Evaluation Pages */
+.member-form-page {
+  max-width: 1000px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+/* Page Title */
+.member-form-title {
+  text-align: center;
+  color: var(--olive-stem);
+  font-size: 2em;
+  margin: 25px 0 35px;
+}
+/* Form Container */
+.member-form-container {
+  background-color: #ffffff;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 12px;
+  padding: 30px 35px;
+  margin: 25px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+}
+/* Form Groups */
+.member-form-container .form-group {
+  margin-bottom: 25px;
+}
+/* Form labels */
+.member-form-container label {
+  display: block;
+  color: var(--olive-stem);
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+/* Inputs, Dropdowns and Textarea */
+.member-form-container input, .member-form-container select, .member-form-container textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--olive-stem);
+  border-radius: 6px;
+}
+/* Textarea size and resizing */
+.member-form-container textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+/* Focus State */
+.member-form-container input:focus, .member-form-container select:focus, .member-form-container textarea:focus {
+  outline: 2px solid var(--soft-clay);
+  outline-offset: 2px;
+}
+/* Submit Button */
+.member-form-button {
+  display: block;
+  min-width: 180px;
+  padding: 12px 20px;
+  margin: 10px 0 0;
+  background-color: var(--soft-clay);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid var(--olive-stem);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Submit button hover effect */
+.member-form-button:hover {
+  background-color: var(--hot-gossip);
+}
+/* Keyboard focus for the submit button */
+.member-form-button:focus-visible {
+  outline: 2px solid var(--olive-stem);
+  outline-offset: 3px;
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+  /* Adjust the page width on small screens */
+  .member-form-page {
+    width: calc(100% - 24px);
+  }
+  /* Reduce the title size on small screens */
+  .member-form-title {
+    font-size: 1.6em;
+    margin: 20px 0 25px;
+  }
+  /* Reduce form padding on small screens */
+  .member-form-container {
+    padding: 20px 16px;
+  }
+  /* Reduce spacing between form fields */
+  .member-form-container .form-group {
+    margin-bottom: 20px;
+  }
+  /* Make the submit button full width */
+  .member-form-button {
+    width: 100%;
+  }
+}
+/* ===================================================
+   Manager Dashboard Pages
+   (manager-dashboard, add-offering, manage-team)
+   =================================================== */
+/* Page container for all manager pages */
+.mgr-page {
+  max-width: 1000px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* Page title */
+.mgr-title {
+  text-align: center;
+  color: var(--olive-stem);
+  font-size: 2em;
+  margin: 20px 0 30px;
+}
+/* White box around each section */
+.mgr-box {
+  background-color: #ffffff;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 25px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+/* Section headings */
+.mgr-box h2 {
+  color: var(--olive-stem);
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--soft-clay);
+  display: inline-block;
+}
+/* Circle that shows the number of pending requests */
+.mgr-counter {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--hot-gossip);
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+/* Scroll bar when the table is taller or wider than the box */
+.mgr-table-scroll {
+  max-height: 230px;
+  overflow: auto;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 8px;
+}
+/* Tables */
+.mgr-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Table headings */
+.mgr-table th {
+  background-color: var(--bare-minimum);
+  color: var(--text-color);
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+}
+/* Table cells */
+.mgr-table td {
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--bare-minimum);
+}
+/* Light colour on every second row */
+.mgr-table tr:nth-child(odd) td {
+  background-color: var(--bg-color);
+}
+/* Row hover effect */
+.mgr-table tr:hover td {
+  background-color: #fdf1e9;
+}
+/* Approve and Decline buttons */
+.mgr-btn-approve, .mgr-btn-decline {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.mgr-btn-approve {
+  background-color: var(--olive-stem);
+}
+.mgr-btn-decline {
+  background-color: var(--soft-clay);
+}
+.mgr-btn-approve:hover, .mgr-btn-decline:hover {
+  background-color: var(--hot-gossip);
+}
+/* Actions drop-down list */
+.mgr-table select {
+  padding: 6px;
+  border: 1px solid var(--olive-stem);
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+/* Links section - CSS Flexbox */
+.mgr-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 25px 0;
+}
+/* Each link box takes equal space */
+.mgr-link-box {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+.mgr-link-box h3 {
+  color: var(--olive-stem);
+  margin-top: 0;
+}
+/* Link styled as a button */
+.mgr-link-btn {
+  align-self: flex-start;
+  background-color: var(--soft-clay);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.mgr-link-btn:hover {
+  background-color: var(--hot-gossip);
+}
+/* Forms: labels and fields */
+.mgr-form label {
+  display: block;
+  color: var(--olive-stem);
+  font-weight: bold;
+  margin: 18px 0 6px;
+}
+.mgr-form input, .mgr-form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  border: 1px solid var(--olive-stem);
+  border-radius: 6px;
+  background-color: var(--bg-color);
+}
+.mgr-form textarea {
+  resize: vertical;
+}
+/* Submit buttons (Add Offering, Add to Team, Delete) */
+.mgr-submit {
+  display: block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  background-color: var(--soft-clay);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid var(--olive-stem);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.mgr-submit:hover {
+  background-color: var(--hot-gossip);
+}
+/* Delete button has a darker colour */
+.mgr-delete {
+  background-color: var(--hot-gossip);
+}
+.mgr-delete:hover {
+  background-color: #990038;
+}
+/* One instructor row: checkbox, image and name (Flexbox) */
+.mgr-member {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.mgr-member:hover {
+  background-color: var(--bg-color);
+}
+/* Small instructor image */
+.mgr-member img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--bare-minimum);
+}
+.mgr-member span {
+  font-weight: bold;
+  color: var(--olive-stem);
+}
+/* Small screens */
+@media (max-width: 600px) {
+  .mgr-page {
+    width: calc(100% - 24px);
+  }
+  .mgr-box {
+    padding: 18px;
+  }
+  .mgr-submit {
+    width: 100%;
+  }
+}
+/* ===================================================
+   Club Offerings Page (offerings.html)
+   =================================================== */
+/* Page container */
+.off-page {
+  max-width: 1000px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* Page title */
+.off-title {
+  text-align: center;
+  color: var(--olive-stem);
+  font-size: 2em;
+  margin: 20px 0 30px;
+}
+/* Sort label and drop-down list in one row (Flexbox) */
+.off-sort {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 870px;
+  margin: 0 auto 30px;
+}
+.off-sort label {
+  color: var(--olive-stem);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.off-sort select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid var(--olive-stem);
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: var(--text-color);
+}
+/* Offerings list - CSS Flexbox, two cards in each row */
+.off-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+/* One offering card */
+.off-card {
+  flex: 0 1 420px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid var(--bare-minimum);
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+/* Card hover effect */
+.off-card:hover {
+  border-color: var(--soft-clay);
+}
+/* Offering image */
+.off-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
+  background-color: #f6f2ed;
+  border-radius: 8px;
+}
+/* Offering name */
+.off-card h2 {
+  color: var(--olive-stem);
+  font-size: 1.2rem;
+  margin: 15px 0 8px;
+}
+/* Offering descriptions remain visible on the Offerings page */
+.off-card p {
+  margin: 0 0 15px;
+  font-size: 0.95rem;
+}
+/* Price and heart in one row, pushed to the bottom of the card */
+.off-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--bare-minimum);
+}
+.off-card .off-price {
+  margin: 0;
+  font-weight: bold;
+  color: var(--olive-stem);
+}
+/* Heart (favourite) button */
+.off-fav {
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--hot-gossip);
+  cursor: pointer;
+}
+.off-fav:hover {
+  color: var(--soft-clay);
+}
+/* Small screens */
+@media (max-width: 600px) {
+  .off-page {
+    width: calc(100% - 24px);
+  }
+  .off-sort {
+    flex-wrap: wrap;
+  }
+}
+/* Gallery page styles moved from Gallery.html */
+.gallery {
+  background: var(--bg-color, #faf8f5);
+  color: var(--text-color, #333);
+  padding-bottom: 40px;
+}
+.intro {
+  text-align: center;
+  padding: 30px 15px;
+}
+.intro h1 {
+  color: var(--olive-stem, #5F7334);
+}
+.bouquets {
+  width: 85%;
+  max-width: 800px;
+  margin: auto;
+}
+.bouquet {
+  background: white;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px #00000010;
+}
+.bouquet img {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  object-fit: contain;
+}
+.bouquet h2 {
+  color: var(--olive-stem, #5F7334);
+}
+.booking {
+  text-align: center;
+  padding: 30px 15px;
+}
+.booking a {
+  background: var(--olive-stem, #5F7334);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+.booking a:hover {
+  background: #485927;
+}
+/* =========================================================
+   Phase 3 - Home Page (Joud): themes, Back to Top, clock, phone layout
+   ========================================================= */
+img {
+  max-width: 100%;
+}
+.theme-button {
+  margin: 4px 0 6px;
+  padding: 6px 16px;
+  border: 2px solid #FBD878;
+  background-color: #5F7334;
+  color: #FBD878;
+  font-weight: bold;
+}
+.theme-button:hover {
+  background-color: #CC004B;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1001;
+  padding: 10px 14px;
+  background-color: #CC004B;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.back-to-top:hover {
+  background-color: #5F7334;
+}
+.footer-clock {
+  margin: 4px 0 0;
+  color: #FBD878;
+  font-weight: bold;
+}
+.member-form-container .member-form-button {
+  width: auto;
+  padding: 12px 20px;
+  background-color: #F2896A;
+  color: #ffffff;
+  font-weight: bold;
+}
+.member-form-container .member-form-button:hover {
+  background-color: #CC004B;
+}
+@media screen and (max-width: 600px) {
+  header {
+    position: static;
+  }
+  .member-form-container .member-form-button {
+    width: 100%;
+  }
+  .logo-container img {
+    width: 60px;
+    height: 60px;
+  }
+  .featured-card {
+    flex: 1 1 auto;
+  }
+  .home-section-heading h2, .symbolism-intro h2 {
+    font-size: 1.4rem;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #footer-logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .back-to-top {
+    bottom: 12px;
+    right: 12px;
+    padding: 8px 10px;
+  }
+}

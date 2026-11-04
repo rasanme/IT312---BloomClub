@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page settings and CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Offering</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Website header and navigation -->
+<header>
+  <div class="header-top">
+    <div class="logo-container">
+      <img src="images/bloomLogo.png" alt="Bloom Club Logo">
+      <span>Bloom Club</span>
+    </div>
+  </div>
+
+  <!-- Navigation links -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="offerings.html">Offerings</a></li>
+      <li><a href="AboutUs_Page.html">About Us</a></li>
+      <li><a href="member-dashboard.html">Member Dashboard</a></li>
+      <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Breadcrumb navigation -->
+    <div class="breadcrumb">
+        <a href="home.html">HOME </a> ►
+        <a href="manager-dashboard.html"> Manager Dashboard</a> ► Add New Offering
+    </div>
+    
+<!-- Main content of the page -->
+<main class="mgr-page">
+
+
+    <!-- Page title -->
+    <h1 class="mgr-title">Add New Offering</h1>
+
+    <!-- Add offering form (user interface only) -->
+    <section class="mgr-box">
+        <form action="#" method="post" enctype="multipart/form-data" class="mgr-form">
+
+            <label for="offer-name">Name of Offering:</label>
+            <input type="text" id="offer-name" name="offer-name" placeholder="Add text" required>
+
+            <label for="offer-image">Offering Picture (upload file):</label>
+            <input type="file" id="offer-image" name="offer-image" accept="image/*" required>
+
+            <label for="offer-price">Price (in Riyals):</label>
+            <input type="number" id="offer-price" name="offer-price" min="0" placeholder="0 for a free offering" required>
+
+            <label for="offer-description">Description:</label>
+            <textarea id="offer-description" name="offer-description" rows="5" placeholder="Add text" required></textarea>
+
+            <button type="submit" class="mgr-submit">Add Offering</button>
+        </form>
+    </section>
+
+</main>
+
+<!-- Website footer -->
+<footer>
+    <div class="footer-container">
+
+      <!-- Contact information -->
+      <div class="footer-section" id="contact-us"><h2>Contact us</h2>
+         <hr>
+        <ul>
+            <li class="logo-icon" id="phone-icon"><a href="tel:+966552690204" target="_blank"><img src="images/phone.png" alt="" class="footer-icon">  Phone</a></li>
+            <li class="logo-icon" id="email-icon"><a href="mailto:BloomClub@gmail.com" target="_blank"><img src="images/email.png" alt="" class="footer-icon">  Email</a></li>
+            <li class="logo-icon" id="location-icon"><a href="https://maps.app.goo.gl/LZVPqwNEsbNbXUPS9?g_st=ic" target="_blank"><img src="images/location.png" alt="" class="footer-icon">  Location</a></li>
+        </ul>
+    </div>
+
+      <!-- Website logo -->
+      <div class="footer-section" id="footer-logo"><img src="images/bloomLogo.png" alt="Bloom Logo"></div>
+
+      <!-- Social media links -->
+      <div class="footer-section" id="social-media"><h2>Social media</h2>
+         <hr>
+        <ul>
+            <li class="logo-icon" id="facebook-icon"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook Icon" class="footer-icon">  Facebook</a></li>
+            <li class="logo-icon" id="instagram-icon"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram Icon" class="footer-icon">  Instagram</a></li>
+            <li class="logo-icon" id="X-icon"><a href="https://x.com" target="_blank"><img src="images/X.png" alt="X Icon" class="footer-icon">  X</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- Copyright information -->
+    <div class="footer-bottom"><p>©️ 2026 Bloom Club</p></div>
+
+</footer>
+
+</body>
+</html>

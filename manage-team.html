@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page settings and CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Activity Leaders and Instructors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Website header and navigation -->
+<header>
+  <div class="header-top">
+    <div class="logo-container">
+      <img src="images/bloomLogo.png" alt="Bloom Club Logo">
+      <span>Bloom Club</span>
+    </div>
+  </div>
+
+  <!-- Navigation links -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="offerings.html">Offerings</a></li>
+      <li><a href="AboutUs_Page.html">About Us</a></li>
+      <li><a href="member-dashboard.html">Member Dashboard</a></li>
+      <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+    </ul>
+  </nav>
+</header>
+
+ <!-- Breadcrumb navigation -->
+    <div class="breadcrumb">
+        <a href="home.html">HOME</a> ►
+        <a href="manager-dashboard.html">Manager Dashboard</a> ► Manage Activity Leaders and Instructors
+    </div> 
+
+    
+<!-- Main content of the page -->
+<main class="mgr-page">
+
+
+    <!-- Page title -->
+    <h1 class="mgr-title">Manage Activity Leaders and Instructors</h1>
+
+    <!-- Section 1: form listing current instructors for deletion -->
+    <section class="mgr-box">
+        <h2>List of Current Instructors (select to delete)</h2>
+
+        <form action="#" method="post">
+            <!-- Each label holds a checkbox, a small image and a name -->
+            <label class="mgr-member" for="del-rasan">
+                <input type="checkbox" id="del-rasan" name="delete" value="rasan">
+                <img src="images/profile.png" alt="Rasan photo">
+                <span>Rasan</span>
+            </label>
+
+            <label class="mgr-member" for="del-sara">
+                <input type="checkbox" id="del-sara" name="delete" value="sara">
+                <img src="images/profile.png" alt="Sara photo">
+                <span>Sara</span>
+            </label>
+
+            <label class="mgr-member" for="del-joud">
+                <input type="checkbox" id="del-joud" name="delete" value="joud">
+                <img src="images/profile.png" alt="Joud photo">
+                <span>Joud</span>
+            </label>
+
+            <label class="mgr-member" for="del-ghada">
+                <input type="checkbox" id="del-ghada" name="delete" value="ghada">
+                <img src="images/profile.png" alt="Ghada photo">
+                <span>Ghada</span>
+            </label>
+
+            <button type="submit" class="mgr-submit mgr-delete">Delete Selected Instructors</button>
+        </form>
+    </section>
+
+    <!-- Section 2: form for adding a new instructor -->
+    <section class="mgr-box">
+        <h2>Add a New Instructor</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data" class="mgr-form">
+
+            <label for="inst-name">Full Name:</label>
+            <input type="text" id="inst-name" name="inst-name" placeholder="Add text" required>
+
+            <label for="inst-photo">Profile Picture (upload file):</label>
+            <input type="file" id="inst-photo" name="inst-photo" accept="image/*" required>
+
+            <label for="inst-dob">Date of Birth:</label>
+            <input type="date" id="inst-dob" name="inst-dob" required>
+
+            <label for="inst-email">Email:</label>
+            <input type="email" id="inst-email" name="inst-email" placeholder="name@example.com" required>
+
+            <label for="inst-expertise">Area of Expertise:</label>
+            <input type="text" id="inst-expertise" name="inst-expertise" placeholder="Add text" required>
+
+            <label for="inst-skills">Skills:</label>
+            <textarea id="inst-skills" name="inst-skills" rows="4" placeholder="Add text" required></textarea>
+
+            <label for="inst-education">Education:</label>
+            <input type="text" id="inst-education" name="inst-education" placeholder="Add text" required>
+
+            <button type="submit" class="mgr-submit">Add to Team</button>
+        </form>
+    </section>
+
+</main>
+
+<!-- Website footer -->
+<footer>
+    <div class="footer-container">
+
+      <!-- Contact information -->
+      <div class="footer-section" id="contact-us"><h3>Contact us</h3>
+         <hr>
+        <ul>
+            <li class="logo-icon" id="phone-icon"><a href="tel:+966552690204" target="_blank"><img src="images/phone.png" alt="" class="footer-icon">  Phone</a></li>
+            <li class="logo-icon" id="email-icon"><a href="mailto:BloomClub@gmail.com" target="_blank"><img src="images/email.png" alt="" class="footer-icon">  Email</a></li>
+            <li class="logo-icon" id="location-icon"><a href="https://maps.app.goo.gl/LZVPqwNEsbNbXUPS9?g_st=ic" target="_blank"><img src="images/location.png" alt="" class="footer-icon">  Location</a></li>
+        </ul>
+    </div>
+
+      <!-- Website logo -->
+      <div class="footer-section" id="footer-logo"><img src="images/bloomLogo.png" alt="Bloom Logo"></div>
+
+      <!-- Social media links -->
+      <div class="footer-section" id="social-media"><h3>Social media</h3>
+         <hr>
+        <ul>
+            <li class="logo-icon" id="facebook-icon"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook Icon" class="footer-icon">  Facebook</a></li>
+            <li class="logo-icon" id="instagram-icon"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram Icon" class="footer-icon">  Instagram</a></li>
+            <li class="logo-icon" id="X-icon"><a href="https://x.com" target="_blank"><img src="images/X.png" alt="X Icon" class="footer-icon">  X</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- Copyright information -->
+    <div class="footer-bottom"><p>©️ 2026 Bloom Club</p></div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page settings and CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Website header and navigation -->
+<header>
+  <div class="header-top">
+    <div class="logo-container">
+      <img src="images/bloomLogo.png" alt="Bloom Club Logo">
+      <span>Bloom Club</span>
+    </div>
+  </div>
+
+  <!-- Navigation links -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="offerings.html">Offerings</a></li>
+      <li><a href="AboutUs_Page.html">About Us</a></li>
+      <li><a href="member-dashboard.html">Member Dashboard</a></li>
+      <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Breadcrumb navigation -->
+    <div class="breadcrumb"><a href="home.html">HOME</a> ► Manager Dashboard</div>
+
+<!-- Main dashboard content -->
+<main class="mgr-page">
+
+    <!-- Dashboard title -->
+    <h1 class="mgr-title">Manager Dashboard</h1>
+
+    <!-- Pending participation requests (sample content only) -->
+    <section class="mgr-box">
+        <h2>Pending Participation Requests <span class="mgr-counter">4</span></h2>
+
+        <!-- The div scrolls when the table is taller than the box -->
+        <div class="mgr-table-scroll">
+            <table class="mgr-table">
+                <tr>
+                    <th>Member Name</th>
+                    <th>Requested Offering</th>
+                    <th>Request Date</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Lamar Thamer</td>
+                    <td>Bridal Bouquet Design</td>
+                    <td>12/10/2026</td>
+                    <td>
+                        <button type="button" class="mgr-btn-approve">Approve</button>
+                        <button type="button" class="mgr-btn-decline">Decline</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fatima Zaid </td>
+                    <td>Flower Arranging 101</td>
+                    <td>15/10/2026</td>
+                    <td>
+                        <button type="button" class="mgr-btn-approve">Approve</button>
+                        <button type="button" class="mgr-btn-decline">Decline</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Wed Abdulaziz</td>
+                    <td>Botanical Photography Workshop</td>
+                    <td>20/10/2026</td>
+                    <td>
+                        <button type="button" class="mgr-btn-approve">Approve</button>
+                        <button type="button" class="mgr-btn-decline">Decline</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alanoud Ibrahim</td>
+                    <td>Floral Perfume Preparation</td>
+                    <td>25/10/2026</td>
+                    <td>
+                        <button type="button" class="mgr-btn-approve">Approve</button>
+                        <button type="button" class="mgr-btn-decline">Decline</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- List of all offerings belonging to this manager -->
+    <section class="mgr-box">
+        <h2>Current Offerings for the Manager</h2>
+
+        <div class="mgr-table-scroll">
+            <table class="mgr-table">
+                <tr>
+                    <th>Offering Name</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Bridal Bouquet Design</td>
+                    <td>399 &#x20C1;</td>
+                    <td>
+                        <select name="action-bridal" aria-label="Actions for Bridal Bouquet Design">
+                            <option value="" selected disabled>Actions</option>
+                            <option value="edit">Edit</option>
+                            <option value="delete">Delete</option>
+                            <option value="activate">Activate</option>
+                            <option value="deactivate">Deactivate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Flower Arranging 101</td>
+                    <td>199 &#x20C1;</td>
+                    <td>
+                        <select name="action-arranging" aria-label="Actions for Flower Arranging 101">
+                            <option value="" selected disabled>Actions</option>
+                            <option value="edit">Edit</option>
+                            <option value="delete">Delete</option>
+                            <option value="activate">Activate</option>
+                            <option value="deactivate">Deactivate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Botanical Photography Workshop</td>
+                    <td>0 &#x20C1;</td>
+                    <td>
+                        <select name="action-photography" aria-label="Actions for Botanical Photography Workshop">
+                            <option value="" selected disabled>Actions</option>
+                            <option value="edit">Edit</option>
+                            <option value="delete">Delete</option>
+                            <option value="activate">Activate</option>
+                            <option value="deactivate">Deactivate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Indoor Plant Care &amp; Propagation</td>
+                    <td>249 &#x20C1;</td>
+                    <td>
+                        <select name="action-indoor-plant" aria-label="Actions for Indoor Plant Care and Propagation">
+                            <option value="" selected disabled>Actions</option>
+                            <option value="edit">Edit</option>
+                            <option value="delete">Delete</option>
+                            <option value="activate">Activate</option>
+                            <option value="deactivate">Deactivate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Floral Perfume Preparation</td>
+                    <td>299 &#x20C1;</td>
+                    <td>
+                        <select name="action-perfume" aria-label="Actions for Floral Perfume Preparation">
+                            <option value="" selected disabled>Actions</option>
+                            <option value="edit">Edit</option>
+                            <option value="delete">Delete</option>
+                            <option value="activate">Activate</option>
+                            <option value="deactivate">Deactivate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bouquet Styling</td>
+                    <td>0 &#x20C1;</td>
+                    <td>
+                        <select name="action-styling" aria-label="Actions for Bouquet Styling">
+                            <option value="" selected disabled>Actions</option>
+                            <option value="edit">Edit</option>
+                            <option value="delete">Delete</option>
+                            <option value="activate">Activate</option>
+                            <option value="deactivate">Deactivate</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Links section organized with CSS Flexbox -->
+    <section class="mgr-links">
+        <div class="mgr-link-box">
+            <h3>Add a New Offering</h3>
+            <p>Create a new workshop, class or activity and share it with our members.</p>
+            <a href="add-offering.html" class="mgr-link-btn">Add New Offering</a>
+        </div>
+
+        <div class="mgr-link-box">
+            <h3>Manage Activity Leaders and Instructors</h3>
+            <p>View the current team, remove members or add a new instructor.</p>
+            <a href="manage-team.html" class="mgr-link-btn">Manage Leaders &amp; Instructors</a>
+        </div>
+    </section>
+
+</main>
+
+<!-- Website footer -->
+<footer>
+    <div class="footer-container">
+
+      <!-- Contact information -->
+      <div class="footer-section" id="contact-us"><h4>Contact us</h4>
+         <hr>
+        <ul>
+            <li class="logo-icon" id="phone-icon"><a href="tel:+966552690204" target="_blank"><img src="images/phone.png" alt="" class="footer-icon">  Phone</a></li>
+            <li class="logo-icon" id="email-icon"><a href="mailto:BloomClub@gmail.com" target="_blank"><img src="images/email.png" alt="" class="footer-icon">  Email</a></li>
+            <li class="logo-icon" id="location-icon"><a href="https://maps.app.goo.gl/LZVPqwNEsbNbXUPS9?g_st=ic" target="_blank"><img src="images/location.png" alt="" class="footer-icon">  Location</a></li>
+        </ul>
+    </div>
+
+      <!-- Website logo -->
+      <div class="footer-section" id="footer-logo"><img src="images/bloomLogo.png" alt="Bloom Logo"></div>
+
+      <!-- Social media links -->
+      <div class="footer-section" id="social-media"><h4>Social media</h4>
+         <hr>
+        <ul>
+            <li class="logo-icon" id="facebook-icon"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook Icon" class="footer-icon">  Facebook</a></li>
+            <li class="logo-icon" id="instagram-icon"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram Icon" class="footer-icon">  Instagram</a></li>
+            <li class="logo-icon" id="X-icon"><a href="https://x.com" target="_blank"><img src="images/X.png" alt="X Icon" class="footer-icon">  X</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- Copyright information -->
+    <div class="footer-bottom"><p>©️ 2026 Bloom Club</p></div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Page settings and CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Website header and navigation -->
+<header>
+  <div class="header-top">
+    <div class="logo-container">
+      <img src="images/bloomLogo.png" alt="Bloom Club Logo">
+      <span >Bloom Club</span>
+    </div>
+  </div>
+
+  <!-- Navigation links -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="offerings.html">Offerings</a></li>
+      <li><a href="AboutUs_Page.html">About Us</a></li>
+      <li><a href="member-dashboard.html">Member Dashboard</a></li>
+      <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Main dashboard content -->
+<main>
+    <section id="memberDB">
+
+        <!-- Breadcrumb navigation -->
+        <div class="breadcrumb"><a href="home.html" >HOME </a>► Member Dashboard </div>
+
+        <!-- Dashboard title -->
+        <h1 class="mgr-title">Member Dashboard</h1>
+
+        <!-- Table of previous participation requests -->
+        <div id="tablePrevReq">
+            <h2>Previous Participation Requests</h2>
+            <table>
+                <tr>
+                    <th>Offering Name</th>
+                    <th>Request Date</th>
+                    <th>Cost</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Bridal Bouquet Design</td>
+                    <td>21/3/2026</td>
+                    <td>399 &#x20C1;</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Flower Arranging 101</td>
+                    <td>11/10/2026</td>
+                    <td>199 &#x20C1;</td>
+                    <td>Declined</td>
+                </tr>
+                <tr>
+                    <td>Botanical Photography Workshop</td>
+                    <td>1/12/2026</td>
+                    <td>0 &#x20C1;</td>
+                    <td>Pending</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Links to request and evaluation forms -->
+        <div class="DBAction">
+            <div id="reqForm" class="actionA">
+                <h2>Request to Join an Offering</h2>
+                <p>Pick your workshop and join us for a fun floral experience!</p>
+                <a href="request-form.html" class="btn">Go to Request</a>
+            </div>
+
+            <div id="offerEvalForm" class="actionA">
+                <h2>Offering Evaluation</h2>
+                <p>Rate your workshop and share your experience with us!</p>
+                <a href="offerings-evaluation.html" class="btn">Go to Evaluation</a>
+            </div>
+        </div>    
+
+    </section>
+</main>
+
+<!-- Website footer -->
+<footer>
+    <div class="footer-container">
+
+      <!-- Contact information -->
+      <div class="footer-section" id="contact-us"><h2>Contact us</h2>
+         <hr >
+        <ul>
+            <li class="logo-icon" id="phone-icon"><a href="tel:+966552690204" target="_blank"><img src="images/phone.png" alt="" class="footer-icon">  Phone</a></li>
+            <li class="logo-icon" id="email-icon"><a href="mailto:BloomClub@gmail.com" target="_blank"><img src="images/email.png" alt="" class="footer-icon">  Email</a></li>
+            <li class="logo-icon" id="location-icon"><a href="https://maps.app.goo.gl/LZVPqwNEsbNbXUPS9?g_st=ic" target="_blank"><img src="images/location.png" alt="" class="footer-icon">  Location</a></li>
+        </ul>
+    </div>
+
+      <!-- Website logo -->
+      <div class="footer-section" id="footer-logo" ><img src="images/bloomLogo.png" alt="Bloom Logo"></div>
+
+      <!-- Social media links -->
+      <div class="footer-section" id="social-media"><h2>Social media</h2>
+         <hr >
+        <ul>
+            <li class="logo-icon" id="facebook-icon"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook Icon" class="footer-icon">  Facebook</a></li>
+            <li class="logo-icon" id="instagram-icon"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram Icon" class="footer-icon">  Instagram</a></li>
+            <li class="logo-icon" id="X-icon"><a href="https://x.com" target="_blank"><img src="images/X.png" alt="X Icon" class="footer-icon">  X</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- Copyright information -->
+    <div class="footer-bottom"><p>©️ 2026 Bloom Club</p></div>
+
+</footer>
+
+</body>
+</html>

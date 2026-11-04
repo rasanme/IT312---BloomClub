@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page settings and CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Offerings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Website header and navigation -->
+<header>
+  <div class="header-top">
+    <div class="logo-container">
+      <img src="images/bloomLogo.png" alt="Bloom Club Logo">
+      <span>Bloom Club</span>
+    </div>
+  </div>
+
+  <!-- Navigation links -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="offerings.html">Offerings</a></li>
+      <li><a href="AboutUs_Page.html">About Us</a></li>
+      <li><a href="member-dashboard.html">Member Dashboard</a></li>
+      <li><a href="manager-dashboard.html">Manager Dashboard</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Breadcrumb navigation -->
+<div class="breadcrumb"><a href="home.html">HOME</a> ► Offerings</div>
+
+<!-- Main content of the page -->
+<main class="off-page">
+
+    <!-- Page title -->
+    <h1 class="off-title">Club Offerings Catalogue</h1>
+
+    <!-- Sorting control (sorting will work in Phase 3 with JavaScript) -->
+    <form action="#" class="off-sort">
+        <label for="sort">Sort Offerings By:</label>
+        <select id="sort" name="sort">
+            <option value="">Sort</option>
+            <optgroup label="Price">
+                <option value="price-low">Low to High</option>
+                <option value="price-high">High to Low</option>
+            </optgroup>
+            <optgroup label="Name">
+                <option value="name-az">A–Z</option>
+                <option value="name-za">Z–A</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <!-- All offerings, organized with CSS Flexbox -->
+    <div class="off-list" id="offList"></div>
+
+</main>
+
+<!-- Website footer -->
+<footer>
+    <div class="footer-container">
+
+      <!-- Contact information -->
+      <div class="footer-section" id="contact-us"><h3>Contact us</h3>
+         <hr>
+        <ul>
+            <li class="logo-icon" id="phone-icon"><a href="tel:+966552690204" target="_blank"><img src="images/phone.png" alt="" class="footer-icon">  Phone</a></li>
+            <li class="logo-icon" id="email-icon"><a href="mailto:BloomClub@gmail.com" target="_blank"><img src="images/email.png" alt="" class="footer-icon">  Email</a></li>
+            <li class="logo-icon" id="location-icon"><a href="https://maps.app.goo.gl/LZVPqwNEsbNbXUPS9?g_st=ic" target="_blank"><img src="images/location.png" alt="" class="footer-icon">  Location</a></li>
+        </ul>
+    </div>
+
+      <!-- Website logo -->
+      <div class="footer-section" id="footer-logo"><img src="images/bloomLogo.png" alt="Bloom Logo"></div>
+
+      <!-- Social media links -->
+      <div class="footer-section" id="social-media"><h3>Social media</h3>
+         <hr>
+        <ul>
+            <li class="logo-icon" id="facebook-icon"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook Icon" class="footer-icon">  Facebook</a></li>
+            <li class="logo-icon" id="instagram-icon"><a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram Icon" class="footer-icon">  Instagram</a></li>
+            <li class="logo-icon" id="X-icon"><a href="https://x.com" target="_blank"><img src="images/X.png" alt="X Icon" class="footer-icon">  X</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- Copyright information -->
+    <div class="footer-bottom"><p>©️ 2026 Bloom Club</p></div>
+
+</footer>
+
+<script src="offerings.js"></script>
+</body>
+</html>
