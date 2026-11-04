@@ -37,10 +37,14 @@ Bloom Club is a community for flower enthusiasts who enjoy floral design, plant 
 - Manage Activity Leaders and Instructors
  
 ## Team
-Group 3
-Ghadah Alhuzani  
+### Group 3
+
+Ghadah Alhuzani 
+
 Rasan Algwaifel 
+
 Sarah Alkahtani 
+
 Jood Muhsen 
 
  
